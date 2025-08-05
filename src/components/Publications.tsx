@@ -4,19 +4,43 @@ import { ExternalLink, Calendar } from "lucide-react";
 
 const publications = [
   {
-    title: "Sample Publication Title",
-    journal: "Journal Name",
-    year: "2024",
-    authors: "Your Name, Co-Author Name",
-    abstract: "Brief description of the publication content and key findings...",
+    title: "A novel activity space approach to discover displacement patterns via mobile phone data: An analysis of the 2023 Türkiye-Syria Earthquakes",
+    journal: "Under review for publication",
+    year: "2025",
+    authors: "Aydogdu, B., Dana, A., Çakır, S., & Salah, A. A.",
+    abstract: "A novel activity space approach to analyze migrant population displacement patterns using mobile phone data in earthquake contexts.",
     link: "#",
   },
   {
-    title: "Another Research Paper",
-    journal: "Conference Proceedings",
+    title: "Combining Twitter and mobile phone data to observe biotic push-the Turkish-European border opening",
+    journal: "Journal of Computational Social Science",
     year: "2023",
-    authors: "Your Name, Another Author",
-    abstract: "Summary of research methodology and conclusions...",
+    authors: "Apicella-Selvitano, C., Aydogdu, B., Illican, T., Gindolla, B., Öner, Ö., Salah, A. A., & Şirma, A.",
+    abstract: "Research combining social media and mobile phone data to analyze migration patterns and border dynamics.",
+    link: "#",
+  },
+  {
+    title: "Machine learning for Urban Computing in architecture and urban design",
+    journal: "Wiley",
+    year: "2022",
+    authors: "Aydogdu, B., A. A. Salah, A. A. Erçelik, T.",
+    abstract: "Temporal and spatial analysis of data to draw implications on segregation of Syrian refugees in Turkey with mobile phone data.",
+    link: "#",
+  },
+  {
+    title: "Fine-Grained Mapping of Migrants in Istanbul Using Mobile Imagery and Neural Networks",
+    journal: "IEEE 30th Signal Processing and Communications Applications Conference",
+    year: "2022",
+    authors: "Aydogdu, B., Bolek, C., Gürer, S., Momert, R., & Salah, A. A.",
+    abstract: "Analysis of urban migration patterns using machine learning and mobile imagery data.",
+    link: "#",
+  },
+  {
+    title: "Analysing the social aspects of minorities and migrants with mobility",
+    journal: "International Journal of Data Science and Analytics",
+    year: "2023",
+    authors: "Aydogdu, B., Samet, H., Bal, S., Abkead, S., Cerants, I., & Salah, A. A.",
+    abstract: "Comprehensive analysis of social aspects affecting minority and migrant communities through mobility data.",
     link: "#",
   },
 ];
@@ -26,11 +50,11 @@ export const Publications = () => {
     <section id="publications" className="min-h-screen py-20 bg-accent/30">
       <div className="container max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Publications
+          <h2 className="text-3xl font-bold text-foreground mb-4">
+            Publications & Research
           </h2>
           <p className="text-muted-foreground text-lg">
-            Research papers, articles, and academic contributions
+            Research contributions in data science, migration analysis, and policy research
           </p>
         </div>
 

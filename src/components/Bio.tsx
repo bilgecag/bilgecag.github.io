@@ -5,27 +5,50 @@ export const Bio = () => {
     <section id="bio" className="min-h-screen flex items-center justify-center py-20">
       <div className="container max-w-4xl mx-auto px-4">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent mb-4">
-            Your Name
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+            Bilgecag Aydogdu
           </h1>
-          <p className="text-xl text-muted-foreground">
-            Professional Title or Role
+          <p className="text-xl text-muted-foreground mb-4">
+            Data Science Researcher & Policy Analyst
           </p>
+          <div className="text-sm text-muted-foreground space-y-1">
+            <p>bilgecagaydogdu@gmail.com</p>
+            <p>+33 7 67 09 88 74</p>
+          </div>
         </div>
 
-        <Card className="p-8 shadow-elegant">
-          <div className="prose prose-lg max-w-none">
-            <p className="text-foreground leading-relaxed mb-6">
-              Welcome to my personal page. I'm passionate about creating meaningful work and 
-              contributing to projects that make a difference. With a background in [your field], 
-              I bring expertise in [key skills/areas].
-            </p>
+        <Card className="p-8 shadow-sm border-border/50">
+          <div className="space-y-6">
+            <div>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">Professional Profile</h2>
+              <p className="text-foreground leading-relaxed">
+                Recent PhD graduate with 5+ years of experience in data science research for inclusive 
+                policy analysis of vulnerable populations. Specialized in publishing in high-impact journals, 
+                and leading research in developing analytical models to extract actionable insights for policymakers.
+              </p>
+            </div>
             
-            <p className="text-muted-foreground leading-relaxed">
-              Throughout my career, I've focused on [your focus areas] and have been involved 
-              in [types of projects/work]. I believe in [your philosophy/approach] and am 
-              always eager to connect with like-minded professionals and explore new opportunities.
-            </p>
+            <div>
+              <h3 className="text-lg font-semibold text-foreground mb-3">Core Competencies</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                <div>
+                  <p className="font-medium text-foreground">Technical Skills:</p>
+                  <p className="text-muted-foreground">Python, R, SQL, MATLAB</p>
+                </div>
+                <div>
+                  <p className="font-medium text-foreground">Specialization:</p>
+                  <p className="text-muted-foreground">Statistical modeling, Machine learning, Visualization</p>
+                </div>
+                <div>
+                  <p className="font-medium text-foreground">Research Focus:</p>
+                  <p className="text-muted-foreground">Migration patterns, Policy analysis, Big Data</p>
+                </div>
+                <div>
+                  <p className="font-medium text-foreground">Languages:</p>
+                  <p className="text-muted-foreground">Turkish, English, French, Dutch, German</p>
+                </div>
+              </div>
+            </div>
           </div>
         </Card>
       </div>

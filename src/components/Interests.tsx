@@ -4,28 +4,28 @@ import { Heart, Code, Camera, Music, Book, Plane } from "lucide-react";
 
 const interests = [
   {
-    category: "Professional",
+    category: "Research Areas",
     icon: Code,
-    items: ["Machine Learning", "Web Development", "Data Science", "Open Source"],
+    items: ["Migration Studies", "Policy Analysis", "Urban Computing", "Social Data Science"],
     color: "bg-primary/10 text-primary",
   },
   {
-    category: "Creative", 
+    category: "Data Science", 
     icon: Camera,
-    items: ["Photography", "Digital Art", "Writing", "Design"],
-    color: "bg-purple-100 text-purple-700",
+    items: ["Machine Learning", "Statistical Modeling", "Big Data Analytics", "Visualization"],
+    color: "bg-primary/10 text-primary",
   },
   {
-    category: "Personal",
+    category: "Policy & Development",
     icon: Heart,
-    items: ["Hiking", "Cooking", "Traveling", "Reading"],
-    color: "bg-green-100 text-green-700",
+    items: ["International Development", "Humanitarian Research", "Public Policy", "Social Impact"],
+    color: "bg-primary/10 text-primary",
   },
   {
-    category: "Learning",
+    category: "Academic",
     icon: Book,
-    items: ["Philosophy", "History", "Languages", "Science"],
-    color: "bg-orange-100 text-orange-700",
+    items: ["Peer Review", "Conference Speaking", "Research Collaboration", "Teaching"],
+    color: "bg-primary/10 text-primary",
   },
 ];
 
@@ -78,9 +78,10 @@ export const Interests = () => {
               Current Focus
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              I'm currently exploring the intersection of technology and creativity, 
-              particularly interested in how AI can enhance human potential while 
-              maintaining our unique creative spirit.
+              Currently pursuing opportunities in international development and policy consulting, 
+              with a focus on applying data science methodologies to address global challenges. 
+              Particularly interested in positions with organizations like the United Nations, 
+              OECD, and other international bodies working on migration, development, and social policy.
             </p>
           </Card>
         </div>
