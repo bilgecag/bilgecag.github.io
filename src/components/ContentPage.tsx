@@ -46,11 +46,11 @@ export const ContentPage = ({ activeSection }: ContentPageProps) => {
         {renderContent()}
         
         {/* Footer buttons */}
-        <div className="flex justify-center gap-8 mt-16">
-          <button className="bg-yellow-400 border-2 border-yellow-600 px-6 py-3 text-yellow-900 font-bold text-lg hover:bg-yellow-300 transition-colors">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 mt-16">
+          <button className="w-full md:w-auto bg-yellow-400 border-2 border-yellow-600 px-6 py-3 text-yellow-900 font-bold text-lg hover:bg-yellow-300 transition-colors">
             CONNECT WITH ME
           </button>
-          <button className="bg-yellow-400 border-2 border-yellow-600 px-6 py-3 text-yellow-900 font-bold text-lg hover:bg-yellow-300 transition-colors">
+          <button className="w-full md:w-auto bg-yellow-400 border-2 border-yellow-600 px-6 py-3 text-yellow-900 font-bold text-lg hover:bg-yellow-300 transition-colors">
             LET'S COLLABORATE
           </button>
         </div>
