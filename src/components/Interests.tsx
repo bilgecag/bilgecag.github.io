@@ -6,17 +6,17 @@ const interests = [
   {
     title: "RESEARCH",
     icon: Book,
-    description: "Migration Studies, Policy Analysis, Urban Computing, Social Data Science"
+    description: "Computational Social Science, Migration Studies, Policy Analysis"
   },
   {
     title: "DATA SCIENCE", 
     icon: Code,
-    description: "Machine Learning, Statistical Modeling, Big Data Analytics, Visualization"
+    description: "Tutorials, Frameworks, Tools"
   },
   {
     title: "POLICY",
     icon: Heart,
-    description: "International Development, Humanitarian Research, Public Policy, Social Impact"
+    description: "Migration, International Development, Humanitarian Crises, Social Impact"
   }
 ];
 
