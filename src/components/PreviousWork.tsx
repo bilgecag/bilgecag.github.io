@@ -5,87 +5,74 @@ import { ExternalLink, MapPin, Calendar } from "lucide-react";
 
 const workExperience = [
   {
-    role: "Senior Position",
-    company: "Company Name",
-    location: "City, Country",
-    period: "2022 - Present",
-    description: "Led key initiatives and managed important projects. Achieved significant results and contributed to organizational growth.",
-    technologies: ["Technology 1", "Technology 2", "Technology 3"],
-    link: "#",
+    position: "Data Scientist",
+    company: "Turkcell Technology",
+    location: "Istanbul, Turkey",
+    period: "2021 - 2023", 
+    responsibilities: [
+      "Developed machine learning models for customer behavior analysis",
+      "Conducted research on migration patterns using mobile phone data",
+      "Published findings in peer-reviewed journals",
+      "Collaborated with academic institutions on social data science projects"
+    ]
   },
   {
-    role: "Previous Role",
-    company: "Another Company",
-    location: "City, Country", 
-    period: "2020 - 2022",
-    description: "Developed and implemented solutions that improved efficiency. Collaborated with cross-functional teams to deliver results.",
-    technologies: ["Tool A", "Tool B", "Framework C"],
-    link: "#",
-  },
+    position: "Research Assistant",
+    company: "DT One (Ding)",
+    location: "Dublin, Ireland",
+    period: "2020 - 2021",
+    responsibilities: [
+      "Analyzed mobile money transfer patterns across emerging markets",
+      "Developed data visualization tools for business intelligence",
+      "Supported policy research initiatives",
+      "Contributed to company's research publications"
+    ]
+  }
 ];
 
 export const PreviousWork = () => {
   return (
-    <section id="previous-work" className="min-h-screen py-20">
-      <div className="container max-w-6xl mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Previous Work
-          </h2>
-          <p className="text-muted-foreground text-lg">
-            Professional experience and career highlights
-          </p>
-        </div>
-
-        <div className="space-y-8">
-          {workExperience.map((work, index) => (
-            <Card key={index} className="p-6 hover:shadow-elegant transition-all duration-300">
-              <div className="flex flex-col lg:flex-row lg:items-start gap-6">
-                <div className="flex-1">
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                    <div>
-                      <h3 className="text-2xl font-semibold text-foreground mb-1">
-                        {work.role}
-                      </h3>
-                      <p className="text-lg font-medium text-primary">
-                        {work.company}
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 text-sm text-muted-foreground mb-4">
-                    <div className="flex items-center gap-1">
-                      <MapPin className="h-4 w-4" />
-                      {work.location}
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <Calendar className="h-4 w-4" />
-                      {work.period}
-                    </div>
-                  </div>
-
-                  <p className="text-foreground leading-relaxed mb-4">
-                    {work.description}
-                  </p>
-
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {work.technologies.map((tech, techIndex) => (
-                      <Badge key={techIndex} variant="secondary">
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-
-                <Button variant="outline" size="sm" className="shrink-0">
-                  <ExternalLink className="h-4 w-4 mr-1" />
-                  Learn More
-                </Button>
-              </div>
-            </Card>
-          ))}
-        </div>
+    <div className="space-y-8">
+      <div className="text-center mb-12">
+        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          PROFESSIONAL EXPERIENCE
+        </h1>
+        <p className="text-xl text-white">
+          Career highlights and key positions
+        </p>
       </div>
-    </section>
+
+      <div className="space-y-8 max-w-4xl mx-auto">
+        {workExperience.map((work, index) => (
+          <div key={index} className="border-b border-gray-600 pb-6 last:border-b-0">
+            <div className="space-y-4">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
+                <h3 className="text-xl font-bold text-white">
+                  {work.position}
+                </h3>
+                <span className="text-white">
+                  {work.period}
+                </span>
+              </div>
+              <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
+                <p className="text-lg text-white font-bold">
+                  {work.company}
+                </p>
+                <p className="text-white">
+                  {work.location}
+                </p>
+              </div>
+              <div className="space-y-2">
+                {work.responsibilities.map((responsibility, idx) => (
+                  <p key={idx} className="text-white">
+                    • {responsibility}
+                  </p>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };

@@ -47,52 +47,36 @@ const publications = [
 
 export const Publications = () => {
   return (
-    <section id="publications" className="min-h-screen py-20 bg-accent/30">
-      <div className="container max-w-6xl mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-foreground mb-4">
-            Publications & Research
-          </h2>
-          <p className="text-muted-foreground text-lg">
-            Research contributions in data science, migration analysis, and policy research
-          </p>
-        </div>
-
-        <div className="grid gap-6">
-          {publications.map((pub, index) => (
-            <Card key={index} className="p-6 hover:shadow-elegant transition-all duration-300">
-              <div className="flex flex-col md:flex-row md:items-start gap-4">
-                <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-foreground mb-2">
-                    {pub.title}
-                  </h3>
-                  
-                  <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
-                    <span className="font-medium">{pub.journal}</span>
-                    <div className="flex items-center gap-1">
-                      <Calendar className="h-4 w-4" />
-                      {pub.year}
-                    </div>
-                  </div>
-                  
-                  <p className="text-sm text-muted-foreground mb-3">
-                    <strong>Authors:</strong> {pub.authors}
-                  </p>
-                  
-                  <p className="text-foreground leading-relaxed">
-                    {pub.abstract}
-                  </p>
-                </div>
-                
-                <Button variant="outline" size="sm" className="shrink-0">
-                  <ExternalLink className="h-4 w-4 mr-1" />
-                  View
-                </Button>
-              </div>
-            </Card>
-          ))}
-        </div>
+    <div className="space-y-8">
+      <div className="text-center mb-12">
+        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          PUBLICATIONS & RESEARCH
+        </h1>
+        <p className="text-xl text-white">
+          Academic contributions and research output
+        </p>
       </div>
-    </section>
+
+      <div className="space-y-8 max-w-4xl mx-auto">
+        {publications.map((publication, index) => (
+          <div key={index} className="border-b border-gray-600 pb-6 last:border-b-0">
+            <div className="space-y-3">
+              <h3 className="text-xl font-bold text-white leading-tight">
+                {publication.title}
+              </h3>
+              <p className="text-white">
+                <strong>AUTHORS:</strong> {publication.authors}
+              </p>
+              <p className="text-white">
+                <strong>JOURNAL:</strong> {publication.journal} ({publication.year})
+              </p>
+              <p className="text-white leading-relaxed">
+                {publication.abstract}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
