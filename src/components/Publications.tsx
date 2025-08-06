@@ -32,20 +32,18 @@ const publications = [
     link: "https://link.springer.com/article/10.1007/s41060-023-00396-7",
   },
   {
-    title: "Machine learning for Urban Computing in architecture and urban design",
+    title: "Machine learning for Urban Computing in Machine Learning, Artificial Intelligence and Urban Assemblages: Applications in architecture and urban design",
     journal: "Wiley",
     year: "2022",
-    authors: "Aydogdu, B., A. A. Salah, A. A. Erçelik, T.",
-    abstract: "Temporal and spatial analysis of data to draw implications on segregation of Syrian refugees in Turkey with mobile phone data.",
-    link: "#",
+    authors: "Aydoğdu, B., A. A. Salah, A. A.",
+    link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/9781119815075.ch20",
   },
   {
-    title: "Fine-Grained Mapping of Migrants in Istanbul Using Mobile Imagery and Neural Networks",
-    journal: "IEEE 30th Signal Processing and Communications Applications Conference",
-    year: "2022",
-    authors: "Aydogdu, B., Bolek, C., Gürer, S., Momert, R., & Salah, A. A.",
-    abstract: "Analysis of urban migration patterns using machine learning and mobile imagery data.",
-    link: "#",
+    title: "Fine-Grained Mapping of Migrants in Istanbul Using Satellite Imaging and Mobile Phone Data",
+    journal: "IEEE 31st Signal Processing and Communications Applications Conference",
+    year: "2023",
+    authors: "Aydoğdu, B., Balçık, Ç., Güneş, S., Momeni, R., & Salah, A. A.",
+    link: "https://ieeexplore.ieee.org/abstract/document/10223985",
   },
 ];
 
