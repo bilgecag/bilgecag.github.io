@@ -17,7 +17,7 @@ export const Bio = () => {
           </div>
         </div>
 
-        <Card className="p-8 shadow-sm border-border/50">
+        <Card className="p-8 shadow-soft border-border/50 hover:shadow-elevated transition-[var(--transition-bounce)] rounded-2xl">
           <div className="space-y-6">
             <div>
               <h2 className="text-2xl font-semibold text-foreground mb-4">Professional Profile</h2>

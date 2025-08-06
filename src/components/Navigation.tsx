@@ -31,7 +31,7 @@ export const Navigation = () => {
             variant="ghost"
             size="sm"
             onClick={() => scrollToSection(section.id)}
-            className="justify-start text-muted-foreground hover:text-primary hover:bg-accent transition-all duration-300"
+            className="justify-start text-muted-foreground hover:text-primary hover:bg-accent transition-[var(--transition-bounce)] rounded-lg"
           >
             {section.label}
           </Button>
@@ -44,20 +44,20 @@ export const Navigation = () => {
           variant="outline"
           size="sm"
           onClick={() => setIsOpen(!isOpen)}
-          className="bg-card shadow-lg"
+          className="bg-card shadow-soft rounded-lg border-2 hover:shadow-elevated transition-[var(--transition-bounce)]"
         >
           {isOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
         </Button>
 
         {isOpen && (
-          <div className="absolute top-12 right-0 bg-card rounded-lg shadow-xl border p-2 min-w-[140px]">
+          <div className="absolute top-12 right-0 bg-card rounded-lg shadow-elevated border p-2 min-w-[140px] z-50 backdrop-blur-sm">
             {sections.map((section) => (
               <Button
                 key={section.id}
                 variant="ghost"
                 size="sm"
                 onClick={() => scrollToSection(section.id)}
-                className="w-full justify-start text-muted-foreground hover:text-primary"
+                className="w-full justify-start text-muted-foreground hover:text-primary hover:bg-accent/50 transition-[var(--transition-bounce)] rounded-lg"
               >
                 {section.label}
               </Button>

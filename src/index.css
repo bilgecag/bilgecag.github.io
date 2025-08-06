@@ -8,41 +8,41 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 248 250 252 1;
-    --foreground: 15 23 42 1;
+    /* Earth-toned minimalistic color palette */
+    --background: 50 20 15 1; /* Warm off-white */
+    --foreground: 30 20 15 1; /* Deep earth brown */
 
-    --card: 255 255 255 1;
-    --card-foreground: 15 23 42 1;
+    --card: 45 25 20 1; /* Soft cream */
+    --card-foreground: 30 20 15 1;
 
-    --popover: 255 255 255 1;
-    --popover-foreground: 15 23 42 1;
+    --popover: 45 25 20 1;
+    --popover-foreground: 30 20 15 1;
 
-    --primary: 59 130 246 1;
-    --primary-foreground: 255 255 255 1;
+    --primary: 30 45 35 1; /* Forest green */
+    --primary-foreground: 50 20 15 1;
 
-    --secondary: 241 245 249 1;
-    --secondary-foreground: 51 65 85 1;
+    --secondary: 40 20 15 1; /* Light clay */
+    --secondary-foreground: 30 20 15 1;
 
-    --muted: 248 250 252 1;
-    --muted-foreground: 100 116 139 1;
+    --muted: 45 15 10 1; /* Soft beige */
+    --muted-foreground: 25 15 12 1; /* Muted brown */
 
-    --accent: 239 246 255 1;
-    --accent-foreground: 59 130 246 1;
+    --accent: 35 30 25 1; /* Terracotta accent */
+    --accent-foreground: 50 20 15 1;
 
-    --destructive: 239 68 68 1;
-    --destructive-foreground: 255 255 255 1;
+    --destructive: 5 60 50 1; /* Muted red */
+    --destructive-foreground: 50 20 15 1;
 
-    --border: 226 232 240 1;
-    --input: 226 232 240 1;
-    --ring: 59 130 246 1;
+    --border: 40 15 12 1; /* Subtle earth border */
+    --input: 40 15 12 1;
+    --ring: 30 45 35 1;
 
-    /* Professional design tokens for consultancy roles */
-    --primary-glow: 147 197 253 1;
-    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(212 100% 70%));
-    --gradient-subtle: linear-gradient(180deg, hsl(248 250 252 / 0.8), hsl(241 245 249 / 0.4));
-    --shadow-elegant: 0 4px 20px -4px hsl(59 130 246 / 0.1);
-    --shadow-glow: 0 0 20px hsl(147 197 253 / 0.15);
-    --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Game-like design tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(30 45 35), hsl(35 40 40));
+    --gradient-subtle: linear-gradient(180deg, hsl(50 20 15 / 0.9), hsl(45 25 20 / 0.6));
+    --shadow-soft: 0 2px 8px -2px hsl(30 20 15 / 0.1);
+    --shadow-elevated: 0 4px 12px -3px hsl(30 20 15 / 0.15);
+    --transition-bounce: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --radius: 0.5rem;
 
@@ -64,33 +64,34 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark earth tones */
+    --background: 20 20 15 1; /* Dark earth */
+    --foreground: 45 25 20 1; /* Light cream */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 25 25 20 1; /* Dark clay */
+    --card-foreground: 45 25 20 1;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 25 25 20 1;
+    --popover-foreground: 45 25 20 1;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 35 40 30 1; /* Muted forest */
+    --primary-foreground: 45 25 20 1;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 30 25 20 1; /* Dark clay secondary */
+    --secondary-foreground: 45 25 20 1;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 25 20 18 1; /* Dark muted */
+    --muted-foreground: 40 20 18 1;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 30 30 25 1; /* Dark terracotta */
+    --accent-foreground: 45 25 20 1;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 5 50 40 1; /* Dark muted red */
+    --destructive-foreground: 45 25 20 1;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 25 20 18 1;
+    --input: 25 20 18 1;
+    --ring: 35 40 30 1;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -109,5 +110,12 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Comfortaa', 'Comic Sans MS', cursive;
+    font-weight: 400;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Comfortaa', 'Comic Sans MS', cursive;
+    font-weight: 600;
   }
 }
